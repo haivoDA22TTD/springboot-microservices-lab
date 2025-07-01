@@ -1,5 +1,15 @@
 // src/pages/UserPage.jsx
-import React from "react";
+import React, { useContext } from "react";
+import UserProductList from "../components/UserProductList";
+import { AuthContext } from "../components/AuthContext";
+
 export default function UserPage() {
-  return <div className="p-8"><h1 className="text-2xl font-bold">User Dashboard</h1></div>;
+  const { token } = useContext(AuthContext);
+
+  return (
+    <div className="p-8">
+      <h1 className="text-2xl font-bold mb-4">User Dashboard</h1>
+      <UserProductList token={token} />
+    </div>
+  );
 }
