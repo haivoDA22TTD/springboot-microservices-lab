@@ -114,10 +114,9 @@ cd springboot-microservices-lab
 ### 4.6 Các service backend và cổng 
   | Service               | Mô tả                                | Port mặc định |
 |-----------------------|--------------------------------------|---------------|
-| Config Server         | Quản lý cấu hình tập trung           | 8888          |
 | Eureka Server         | Service Discovery / Registry         | 8761          |
-| API Gateway           | Cổng vào chung (Gateway)              | 8080          |
-| Customer Service      | Quản lý khách hàng                   | 8081          |
+| API Gateway           | Cổng vào chung (Gateway)              | 8080          |      
+| Auth Service          | Xác thực người dùng                   | 8081          |
 | Order Service         | Quản lý đơn hàng                     | 8082          |
 | Product Service       | Quản lý sản phẩm                     | 8083          |
 
